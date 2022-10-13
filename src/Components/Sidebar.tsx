@@ -1,5 +1,5 @@
-import { Home, ModeNight, Notes, People, Person, Storefront } from "@mui/icons-material";
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material";
+import { Add, Home, Notes, People, Person, Storefront } from "@mui/icons-material";
+import { Box, Button, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import React from "react";
 
 const Sidebar = () => {
@@ -47,13 +47,13 @@ const Sidebar = () => {
                             <ListItemText primary="Friends" />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton>
+                    <ListItem>
+                        <Button variant="contained">
                             <ListItemIcon>
-                                <ModeNight />
+                                <Add sx={{ color: "white" }} fontSize="large" />
                             </ListItemIcon>
-                            <Switch />
-                        </ListItemButton>
+                            <ListItemText primary="Add Post" />
+                        </Button>
                     </ListItem>
                 </List>
             </Box>
