@@ -1,10 +1,12 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box } from "@mui/material";
+import Posts from "./Posts";
 
 const Feeds = () => {
-  return (
-    <Box flex={4}>Feeds</Box>
-  )
-}
+    return (
+        <Box flex={4}>
+            <Posts />
+        </Box>
+    );
+};
 
-export default Feeds
+export default Feeds;
